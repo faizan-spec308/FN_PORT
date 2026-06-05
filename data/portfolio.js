@@ -1,0 +1,195 @@
+export const profile = {
+  firstName: 'Faizan',
+  lastName:  'Naveed',
+  title:     'Faizan Naveed',
+  roles:     ['Software Engineer', 'Data Scientist', 'AI Builder', 'Product Owner'],
+  tagline:   "CS @ Brunel University London · Predicted First-Class Honours",
+  subTagline: "I don't just learn it — I build it, ship it, and present it to Microsoft.",
+  currently: ['Seeking placement 2026', 'Building AI systems', 'Studying algorithms'],
+  email:     'faizangpt4@gmail.com',
+  phone:     '+44 7933 398273',
+  location:  'London, UK',
+  github:    'https://github.com/faizan-spec308',
+  linkedin:  'https://linkedin.com/in/faizan-naveed-3150aa388',
+  cv:        'cv.pdf',
+
+  about: [
+    "I'm a second-year BSc Computer Science student at Brunel University London — predicted a First-Class Honours degree — focused on software engineering, data science, and applied AI.",
+    "I don't learn by watching tutorials. I learn by picking a real problem, building a real solution, and shipping it. HillingOne, KnownLy, and a fraud detection system across 6 million transactions got built that way.",
+    "Currently looking for a 12-month placement starting June 2026. If you're building something interesting, I want to be in the room.",
+  ],
+
+  philosophy: "I believe the best engineers aren't the ones who know the most syntax — they're the ones who ask the best questions, break problems down clearly, and build things people actually use. Every project here started as a genuine problem I wanted to solve.",
+
+  education: {
+    university: 'Brunel University London',
+    degree:     'BSc Computer Science',
+    period:     '2023–2027',
+    predicted:  'First-Class Honours',
+    modules:    ['Algorithms', 'Software Development', 'Networks & Computing', 'Logic & Computation', 'Information Systems', 'Group Project'],
+    award:      'Elanco Company Award — Best Project (CS2701 Exhibition, April 2026)',
+    alevels:    'Mathematics A* · Chemistry A · Physics A',
+  },
+
+  stats: [
+    { value: '5+',   label: 'Projects Built' },
+    { value: '6M+',  label: 'Transactions Analysed' },
+    { value: '1st',  label: 'Class Predicted' },
+    { value: '2026', label: 'Placement Ready' },
+  ],
+
+  highlights: [
+    'Built an agentic AI platform with 4 autonomous agents — presented to Microsoft and Hillingdon Council.',
+    'Won Elanco Company Award for best group project at Brunel CS2701 Exhibition, April 2026.',
+    'Processed 6,000,000+ financial transactions in an ML fraud detection pipeline with 0.1% fraud rate.',
+    'Shipped KnownLy as Product Owner — a real mental health platform for UN SDG 3.',
+    'Predicted First-Class Honours across all Year 1 modules including A+ in Logic & Computation.',
+  ],
+}
+
+export const skills = [
+  {
+    title: 'Languages',
+    items: ['Python', 'Java', 'JavaScript', 'SQL', 'TypeScript'],
+  },
+  {
+    title: 'Frontend',
+    items: ['React', 'HTML / CSS', 'Tailwind CSS', 'Leaflet.js', 'Recharts', 'Figma'],
+  },
+  {
+    title: 'Backend & Data',
+    items: ['FastAPI', 'Spring Boot', 'PostgreSQL', 'MySQL', 'MongoDB', 'REST APIs', 'WebSocket'],
+  },
+  {
+    title: 'ML & AI',
+    items: ['PyTorch', 'Scikit-learn', 'Pandas', 'NumPy', 'Streamlit', 'MLFlow', 'Gemini API'],
+  },
+  {
+    title: 'Tools & Platforms',
+    items: ['Git', 'GitHub', 'Docker', 'AWS', 'Power BI', 'Tableau', 'Jira', 'Ubuntu Linux', 'MATLAB'],
+  },
+]
+
+export const projects = [
+  {
+    id: 'hillingone',
+    title: 'HillingOne',
+    year: '2026',
+    status: 'Hackathon',
+    tagline: 'Agentic AI platform unifying 17 Hillingdon Council booking systems',
+    description: 'Built at the Hillingdon × Brunel Hackathon, HillingOne is an agentic AI booking platform powered by four autonomous AI agents — handling search, booking, demand sensing, and inventory optimisation. Presented to Microsoft and senior Hillingdon Council officers.',
+    problem: 'Hillingdon residents had to navigate 17 separate council systems to book facilities — a broken, fragmented experience that wasted time and resources.',
+    solution: 'Built a unified AI platform with 4 specialised agents that handle search, booking, demand forecasting, and inventory optimisation — all through a single conversational interface.',
+    impact: 'Presented to Microsoft and senior Hillingdon Council officers. Demonstrated real-world viability for council digital transformation.',
+    tech: ['React', 'FastAPI', 'PostgreSQL', 'Google Gemini API'],
+    github: 'https://github.com/faizan-spec308',
+    demo: null,
+    badge: '🏆 Presented to Microsoft',
+    featured: true,
+    agents: [
+      { name: 'Search Agent',    desc: 'Queries all 17 council systems simultaneously' },
+      { name: 'Booking Agent',   desc: 'Handles reservations and confirmations end-to-end' },
+      { name: 'Demand Agent',    desc: 'Predicts peak usage and allocates resources' },
+      { name: 'Inventory Agent', desc: 'Balances load across facilities in real time' },
+    ],
+  },
+  {
+    id: 'knownly',
+    title: 'KnownLy',
+    year: '2026',
+    status: 'Award Winner',
+    tagline: 'Full-stack mental health platform built for UN SDG 3',
+    description: 'Production-ready mental health support web app with real-time chat, user management, and agile development workflow. Built as Product Owner in a team environment.',
+    problem: 'Young people lack accessible, stigma-free mental health support tools that feel built for them.',
+    solution: 'Built a full-stack web app with real-time chat, resource hub, and user management — designed with empathy-first UX principles.',
+    impact: 'Won Elanco Company Award for Best Project at Brunel CS2701 Group Project Exhibition, April 2026.',
+    tech: ['React', 'Java Spring Boot', 'PostgreSQL', 'WebSocket', 'Git'],
+    github: 'https://github.com/faizan-spec308',
+    demo: null,
+    badge: '🥇 Elanco Company Award',
+    role: 'Product Owner',
+    featured: false,
+  },
+  {
+    id: 'fraud-detection',
+    title: 'Fraud Detection System',
+    year: '2024',
+    status: 'Live',
+    tagline: 'ML pipeline detecting fraud across 6M+ financial transactions',
+    description: 'End-to-end machine learning pipeline trained on a severely imbalanced dataset (0.1% fraud rate) using advanced resampling techniques. Deployed live as a Streamlit web application.',
+    problem: 'Financial fraud is rare (0.1% of transactions) but catastrophic. Standard ML models fail on such imbalanced data.',
+    solution: 'Applied SMOTE oversampling, ensemble methods, and threshold tuning to achieve high precision/recall on the minority class.',
+    impact: '6,000,000+ transactions analysed. Deployed as a live Streamlit app.',
+    tech: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Streamlit'],
+    github: 'https://github.com/faizan-spec308/FRAUD-DETECTION',
+    demo: null,
+    badge: '6M+ transactions',
+    featured: false,
+  },
+  {
+    id: 'tick-tracker',
+    title: 'Tick Sighting Tracker',
+    year: '2024',
+    status: 'Complete',
+    tagline: 'Interactive UK map visualising 500+ tick sightings for public health',
+    description: 'Full-stack React application with an interactive Leaflet.js map, real-time filtering by species, date, and region, and data visualisation charts.',
+    problem: 'UK tick sighting data was scattered and inaccessible to the public, limiting awareness of tick-borne disease risks.',
+    solution: 'Built an interactive React app with Leaflet.js mapping, species/date/region filtering, and Recharts visualisations.',
+    impact: '500+ sightings visualised. Useful for public health awareness campaigns.',
+    tech: ['React 18', 'Vite', 'Leaflet.js', 'Recharts', 'React Router'],
+    github: 'https://github.com/faizan-spec308',
+    demo: null,
+    badge: null,
+    featured: false,
+  },
+  {
+    id: 'university-management',
+    title: 'University Management System',
+    year: '2024',
+    status: 'First Class',
+    tagline: 'Java GUI system for student records, attendance, and course admin',
+    description: 'Desktop application with MySQL database integration, validated data entry, accurate reporting, and a clean Figma-designed interface. Received First Class grade.',
+    problem: 'Manual student record management was error-prone and time-consuming for administrators.',
+    solution: 'Built a Java desktop application with MySQL backend, validated forms, and automated reporting — designed in Figma first.',
+    impact: 'Received First Class grade with positive assessor feedback.',
+    tech: ['Java', 'MySQL', 'Figma'],
+    github: 'https://github.com/faizan-spec308',
+    demo: null,
+    badge: 'First Class Grade',
+    featured: false,
+  },
+]
+
+export const experience = [
+  {
+    id: 1,
+    title:    'Marketing Manager',
+    company:  'Robothink STEM Education',
+    location: 'London',
+    period:   'April 2025 — August 2025',
+    bullets: [
+      'Managed Facebook Ads and Google Ads campaigns end-to-end, optimising for conversion and ROI',
+      'Analysed KPI dashboards to surface actionable insights and reported commercial performance to senior management',
+      'Maintained and cleaned CRM systems to ensure data integrity across campaigns',
+    ],
+  },
+  {
+    id: 2,
+    title:    'Software Developer',
+    company:  'Pakizm International',
+    location: 'Pakistan',
+    period:   'February 2024 — June 2024',
+    bullets: [
+      'Designed UI/UX in Figma and developed a fully responsive portfolio website using HTML, CSS, and JavaScript',
+      'Analysed user behaviour data and implemented design changes that contributed to a 35% increase in client enquiries',
+    ],
+  },
+]
+
+export const achievements = [
+  { id: 1, icon: '🏆', title: 'Elanco Company Award',            desc: 'Best Project, Brunel CS2701 Group Project Exhibition, April 2026' },
+  { id: 2, icon: '🤖', title: 'Hillingdon × Brunel Hackathon',   desc: 'Built HillingOne — agentic AI platform presented to Microsoft & Hillingdon Council, April 2026' },
+  { id: 3, icon: '🎓', title: 'Predicted First-Class Honours',   desc: 'Across all Year 1 modules including Logic & Computation (A+)' },
+  { id: 4, icon: '📊', title: '6M+ Transactions Analysed',       desc: 'Independent ML fraud detection project on real-world financial data' },
+  { id: 5, icon: '🌍', title: 'UN SDG 3 Project',                desc: "KnownLy mental health platform built as Product Owner for Good Health & Wellbeing goal" },
+]

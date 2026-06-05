@@ -1,0 +1,25 @@
+export const profile = {
+  name: "Faizan Naveed",
+  initials: "FN",
+  location: "London, United Kingdom",
+  email: "faizangpt4@gmail.com",
+  linkedin: "https://linkedin.com/in/faizan-naveed-3150aa388",
+  github: "https://github.com/faizan-spec308",
+  photo: "",
+  cv: "cv.pdf",
+  heroSentence: "Computer Science student focused on building real-world software, mastering modern technologies, and transforming complex problems into practical solutions.",
+  identityLine: "BSc Computer Science Student (Year 2) · Brunel University London · Predicted First-Class Honours · Seeking Placement 2026",
+  intro: "Python · Java · React · FastAPI · PostgreSQL — building ML pipelines, agentic AI systems, and full-stack products. Predicted First-Class. Placement-ready 2026.",
+  about: [
+    "I'm a second-year BSc Computer Science student at Brunel University London — predicted a First-Class Honours degree — focused on software engineering, data science, and applied AI.",
+    "I don't learn by watching tutorials. I learn by picking a real problem, building a real solution, and shipping it. HillingOne, KnownLy, and a fraud detection system across 6 million transactions got built that way.",
+    "Currently looking for a 12-month placement starting June 2026. If you're building something interesting, I want to be in the room.",
+  ],
+  stats: [
+    { value: "5+", label: "Projects Built" },
+    { value: "6M+", label: "Transactions Analysed" },
+    { value: "1st", label: "Class Predicted" },
+    { value: "2026", label: "Placement Ready" },
+  ],
+  philosophy: "I believe the best engineers aren't the ones who know the most syntax — they're the ones who ask the best questions, break problems down clearly, and build things people actually use. Every project here started as a genuine problem I wanted to solve.",
+};
