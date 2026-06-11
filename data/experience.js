@@ -1,7 +1,7 @@
 export const experiences = [
   {
     role: "IT Business Analyst",
-    organisation: "Lunchbox Media",
+    organisation: "Launchbox Media",
     dates: "June 2025 — December 2025",
     location: "London",
     type: "Industry",
