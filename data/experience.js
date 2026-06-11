@@ -1,5 +1,21 @@
 export const experiences = [
   {
+    role: "IT Business Analyst",
+    organisation: "Lunchbox Media",
+    dates: "June 2025 — December 2025",
+    location: "London",
+    type: "Industry",
+    summary: "Worked as an IT Business Analyst at a marketing and AI agency, owning CRM systems, web infrastructure, and data analytics operations.",
+    bullets: [
+      "Managed and optimised CRM systems to ensure clean data pipelines and accurate client reporting.",
+      "Oversaw and maintained the company website, coordinating content updates and technical improvements.",
+      "Built and monitored data analytics dashboards to surface performance insights across marketing campaigns.",
+      "Acted as the technical bridge between business stakeholders and digital tools, streamlining internal workflows.",
+    ],
+    skills: ["CRM Systems", "Data Analytics", "Business Analysis", "Web Management", "AI Tools"],
+    link: "",
+  },
+  {
     role: "Marketing Manager",
     organisation: "Robothink STEM Education",
     dates: "April 2025 — August 2025",
