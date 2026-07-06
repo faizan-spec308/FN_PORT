@@ -1,5 +1,22 @@
 export const experiences = [
   {
+    role: "AI & Workflow Automation Intern",
+    organisation: "West London Business",
+    dates: "July 2026 — September 2026",
+    location: "London",
+    type: "Paid Summer Internship",
+    summary: "Building AI agents and workflow automations for a non-profit representing 100,000+ businesses across West London.",
+    bullets: [
+      "Worked directly with the CEO and senior team to identify and automate manual processes across communications, reporting, event management, and stakeholder engagement.",
+      "Built and deployed integrations across WLB's core platforms using workflow automation tools and LLM APIs.",
+      "Contributed to a four-day business process redesign retreat in Wales, providing technical expertise on AI capabilities and organisational automation strategy.",
+      "Ran internal AI literacy sessions to upskill staff on AI tools and workflows.",
+      "Produced an end-of-placement handbook documenting all tools built, lessons learned, and recommended next steps.",
+    ],
+    skills: ["Python", "LLM APIs", "Workflow Automation", "REST API Integration", "Google Workspace", "Microsoft 365", "CRM Integration"],
+    link: "",
+  },
+  {
     role: "IT Business Analyst",
     organisation: "Launchbox Media",
     dates: "June 2025 — December 2025",
