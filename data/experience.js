@@ -1,5 +1,22 @@
 export const experiences = [
   {
+    role: "Digital Operations Intern",
+    organisation: "Boots UK",
+    dates: "September 2026 — Present",
+    location: "Nottingham, England",
+    type: "Year in Industry Placement",
+    summary: "Year in Industry placement within the Digital Product Enrichment team, supporting the day-to-day operations of boots.com and the Boots app for millions of customers.",
+    bullets: [
+        "Supporting digital operations across boots.com and the Boots app, ensuring seamless customer experiences across one of the UK's most visited retail websites.",
+        "Working with product data management systems to maintain accurate, complete, and well-tagged product information across the website.",
+        "Using AI writing tools and content workflows to support product listing, tagging, and content enrichment at scale.",
+        "Collaborating with cross-functional teams across digital, commercial, and content to deliver operational improvements and drive site performance.",
+        "Analysing digital performance data and contributing to insights that inform decisions across the Digital Product Enrichment team.",
+    ],
+    skills: ["Monday.com", "PIMS", "Writer AI", "Power BI", "Excel", "Content Management", "Data Analysis", "E-commerce Operations"],
+    link: "",
+},
+  {
     role: "AI & Workflow Automation Intern",
     organisation: "West London Business",
     dates: "July 2026 — September 2026",
