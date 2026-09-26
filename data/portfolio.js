@@ -5,18 +5,18 @@ export const profile = {
   roles:     ['Software Engineer', 'Data Scientist', 'AI Builder', 'Product Owner'],
   tagline:   "CS @ Brunel University London · Predicted First-Class Honours",
   subTagline: "I don't just learn it — I build it, ship it, and present it to Microsoft.",
-  currently: ['Seeking placement 2026', 'Building AI systems', 'Studying algorithms'],
+  currently: ['Digital Operations Intern @ Boots UK', 'Building AI systems'],
   email:     'faizangpt4@gmail.com',
   phone:     '+44 7933 398273',
-  location:  'London, UK',
+  location:  'Nottingham, UK',
   github:    'https://github.com/faizan-spec308',
   linkedin:  'https://linkedin.com/in/faizan-naveed-3150aa388',
   cv:        'cv.pdf',
 
   about: [
-    "I'm a second-year BSc Computer Science student at Brunel University London — predicted a First-Class Honours degree — focused on software engineering, data science, and applied AI.",
+    "I'm a BSc Computer Science student at Brunel University London — predicted a First-Class Honours degree — focused on software engineering, data science, and applied AI.",
     "I don't learn by watching tutorials. I learn by picking a real problem, building a real solution, and shipping it. HillingOne, KnownLy, and a fraud detection system across 6 million transactions got built that way.",
-    "Currently looking for a 12-month placement starting June 2026. If you're building something interesting, I want to be in the room.",
+    "Currently on my placement year as a Digital Operations Intern at Boots UK, having previously spent the summer building AI agents and workflow automations at West London Business directly with the CEO.",
   ],
 
   philosophy: "I believe the best engineers aren't the ones who know the most syntax — they're the ones who ask the best questions, break problems down clearly, and build things people actually use. Every project here started as a genuine problem I wanted to solve.",
