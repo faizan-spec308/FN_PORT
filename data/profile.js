@@ -19,6 +19,7 @@ export const profile = {
     { value: "5+", label: "Projects Built" },
     { value: "6M+", label: "Transactions Analysed" },
     { value: "1st", label: "Class Predicted" },
+    { value: "2026", label: "On Placement" },
   ],
   philosophy: "I believe the best engineers aren't the ones who know the most syntax — they're the ones who ask the best questions, break problems down clearly, and build things people actually use. Every project here started as a genuine problem I wanted to solve.",
 };
