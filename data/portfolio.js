@@ -16,7 +16,7 @@ export const profile = {
   about: [
     "I'm a second-year BSc Computer Science student at Brunel University London — predicted a First-Class Honours degree — focused on software engineering, data science, and applied AI.",
     "I don't learn by watching tutorials. I learn by picking a real problem, building a real solution, and shipping it. HillingOne, KnownLy, and a fraud detection system across 6 million transactions got built that way.",
-    "Currently looking for a 12-month placement starting June 2026. If you're building something interesting, I want to be in the room.",
+    "Currently completing a 12-month placement at Boots UK, supporting digital operations across boots.com and the Boots app.",
   ],
 
   philosophy: "I believe the best engineers aren't the ones who know the most syntax — they're the ones who ask the best questions, break problems down clearly, and build things people actually use. Every project here started as a genuine problem I wanted to solve.",

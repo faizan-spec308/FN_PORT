@@ -104,7 +104,7 @@ function renderHero() {
         <div class="hero__content">
           <div class="hero__badge reveal">
             <span class="pulse"></span>
-            Available · Placement 2026
+            Digital Operations Intern · Boots UK
           </div>
           <p class="kicker reveal" data-delay="1">01 / Origin</p>
           <h1 class="hero__name reveal" data-delay="2">
@@ -136,7 +136,7 @@ function renderHero() {
               <span class="code-window__filename">faizan.py</span>
             </div>
             <div><span class="t-comment"># Faizan Naveed</span></div>
-            <div><span class="t-var">status</span><span class="t-sep"> = </span><span class="t-str">"Seeking Placement 2026"</span></div>
+            <div><span class="t-var">status</span><span class="t-sep"> = </span><span class="t-str">"On placement at Boots UK"</span></div>
             <div><span class="t-var">skills</span><span class="t-sep"> = [</span><span class="t-str">"Python"</span><span class="t-sep">, </span><span class="t-str">"React"</span><span class="t-sep">, </span><span class="t-str">"PyTorch"</span><span class="t-sep">]</span></div>
             <div><span class="t-var">gpa</span><span class="t-sep"> = </span><span class="t-str">"Predicted 1st"</span></div>
             <div><span class="t-var">built</span><span class="t-sep"> = [</span><span class="t-str">"HillingOne"</span><span class="t-sep">, </span><span class="t-str">"KnownLy"</span><span class="t-sep">, </span><span class="t-str">"FraudDetect"</span><span class="t-sep">]</span></div>
@@ -357,7 +357,7 @@ function renderContact() {
           <div class="reveal">
             <p class="kicker">07 / Contact</p>
             <h2 class="contact__heading">Let's build<br><span class="outline">something.</span></h2>
-            <p class="contact__desc">Open to placement roles from June 2026. If you're working on something interesting — AI, software, data — I want to hear about it. Response within 24 hours.</p>
+            <p class="contact__desc">I’m currently on placement at Boots UK. If you're working on something interesting — AI, software, data — I’d be glad to hear about it.</p>
             <div class="contact-info">
               <a href="mailto:${esc(profile.email)}">${esc(profile.email)}</a>
               <a href="tel:${esc(profile.phone)}">${esc(profile.phone)}</a>
