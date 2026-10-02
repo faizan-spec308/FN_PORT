@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Faizan Naveed - BSc Computer Science student at Brunel University London. Building real software — agentic AI, fraud detection, full-stack web. Currently on placement at Boots UK.">
-  <meta name="theme-color" content="#050a0f">
+  <meta name="author" content="Faizan Naveed">
+  <meta name="theme-color" content="#07080f">
+  <link rel="canonical" href="https://fn-port.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fn-port.vercel.app/">
+  <meta property="og:site_name" content="Faizan Naveed">
+  <meta property="og:title" content="Faizan Naveed | Digital Portfolio">
+  <meta property="og:description" content="Computer Science student at Brunel University London building agentic AI, ML pipelines, and full-stack products. Currently on placement at Boots UK.">
+  <meta name="twitter:card" content="summary">
   <title>Faizan Naveed | Digital Portfolio</title>
-  <link rel="preload" href="fonts/Helvetica.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/main.css">
+  <noscript>
+    <style>.loader { display: none; }</style>
+  </noscript>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div id="loader" class="loader" role="status" aria-live="polite">
+  <div id="loader" class="loader" aria-hidden="true">
     <div class="loader__terminal">
       <div class="loader__term-bar">
         <span class="loader__term-dot"></span>
@@ -28,7 +39,21 @@
     </div>
     <div class="loader__bar"><span></span></div>
   </div>
-  <div id="app"></div>
+  <div id="app">
+    <noscript>
+      <main id="main" class="noscript-fallback">
+        <h1>Faizan Naveed</h1>
+        <p>BSc Computer Science, Brunel University London. Digital Operations Intern at Boots UK.</p>
+        <p>This portfolio needs JavaScript for its interactive layout. You can still reach me directly:</p>
+        <ul>
+          <li><a href="cv.pdf">Download my CV</a></li>
+          <li><a href="https://github.com/faizan-spec308">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/faizan-naveed-3150aa388">LinkedIn</a></li>
+          <li><a href="mailto:faizangpt4@gmail.com">faizangpt4@gmail.com</a></li>
+        </ul>
+      </main>
+    </noscript>
+  </div>
   <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 import { profile } from "../data/profile.js";
-import { highlights } from "../data/highlights.js";
 import { skillCategories } from "../data/skills.js";
 import { achievements } from "../data/achievements.js";
 import { tag } from "./ui.js";
@@ -30,8 +29,8 @@ export function AboutSection() {
             <aside class="about-side about-panel--identity">
               <div class="glass-card identity-card reveal">
                 <span>Current direction</span>
-                <strong>Bachelors of Computer Science at Brunel University London</strong>
-                <p>Completed 2nd year, Currently on Year in Industry placement at Boots UK..</p>
+                <strong>BSc Computer Science, Brunel University London</strong>
+                <p>Second year complete. Now on a Year in Industry placement at Boots UK.</p>
               </div>
               <div class="stats-grid">
                 ${list(profile.stats, item => `
@@ -45,24 +44,9 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div class="about-block" id="about-signals">
-          <div class="about-block__header reveal">
-            <p class="section-kicker">02.2 / Quick Signals</p>
-            <h3>At a glance.</h3>
-          </div>
-          <div class="highlight-grid">
-            ${list(highlights, (item, index) => `
-              <article class="glass-card highlight-card reveal">
-                <span>${String(index + 1).padStart(2, "0")}</span>
-                <p>${escapeHtml(item)}</p>
-              </article>
-            `)}
-          </div>
-        </div>
-
         <div class="about-block" id="about-skills">
           <div class="about-block__header reveal">
-            <p class="section-kicker">02.3 / Skills</p>
+            <p class="section-kicker">02.2 / Skills</p>
             <h3>Technical range, grouped for fast scanning.</h3>
           </div>
           <div class="skills-grid">
@@ -84,8 +68,8 @@ export function AboutSection() {
 
         <div class="about-block" id="about-recognition">
           <div class="about-block__header reveal">
-            <p class="section-kicker">02.4 / Recognition</p>
-            <h3>A space dedicated to the milestones that shaped my journey, from hackathons and university awards to project delivery and impact.</h3>
+            <p class="section-kicker">02.3 / Recognition</p>
+            <h3>Milestones that shaped the journey.</h3>
           </div>
           <div class="award-grid recognition-wall">
             ${list(achievements, (item, index) => `
@@ -102,7 +86,7 @@ export function AboutSection() {
 
         <div class="about-block" id="about-philosophy">
           <div class="about-block__header reveal">
-            <p class="section-kicker">02.5 / My Philosophy</p>
+            <p class="section-kicker">02.4 / My Philosophy</p>
             <h3>The human side of building.</h3>
           </div>
           <article class="philosophy-card reveal">

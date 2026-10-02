@@ -1,0 +1,8 @@
+{
+  "name": "fn-portfolio",
+  "private": true,
+  "description": "Faizan Naveed's personal portfolio. Static HTML, CSS and vanilla JS modules, no build step.",
+  "scripts": {
+    "dev": "node tools/static-server.js"
+  }
+}

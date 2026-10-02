@@ -13,14 +13,25 @@ const types = {
   ".png": "image/png",
   ".pdf": "application/pdf",
   ".ttf": "font/ttf",
-  ".otf": "font/otf"
+  ".otf": "font/otf",
+  ".svg": "image/svg+xml",
+  ".ico": "image/x-icon",
+  ".json": "application/json; charset=utf-8",
+  ".woff2": "font/woff2"
 };
 
 http.createServer((req, res) => {
-  const urlPath = decodeURIComponent(req.url.split("?")[0]);
+  let urlPath;
+  try {
+    urlPath = decodeURIComponent(req.url.split("?")[0]);
+  } catch {
+    res.writeHead(400);
+    res.end("Bad request");
+    return;
+  }
   const filePath = path.join(root, urlPath === "/" ? "index.html" : urlPath);
 
-  if (!filePath.startsWith(root)) {
+  if (!filePath.startsWith(root + path.sep)) {
     res.writeHead(403);
     res.end("Forbidden");
     return;

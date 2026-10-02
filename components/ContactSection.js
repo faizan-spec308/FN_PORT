@@ -1,6 +1,7 @@
+import { profile } from "../data/profile.js";
 import { socials } from "../data/socials.js";
 import { sectionHeader } from "./ui.js";
-import { html, list } from "../lib/dom.js";
+import { escapeHtml, html, list } from "../lib/dom.js";
 
 export function ContactSection() {
   return html`
@@ -13,8 +14,8 @@ export function ContactSection() {
             <figcaption>Bill Gates</figcaption>
           </figure>
           <div class="contact-links">
-            ${list(socials, item => `<a href="${item.href}" target="_blank" rel="noreferrer">${item.label}</a>`)}
-            <span>London, United Kingdom</span>
+            ${list(socials, item => `<a href="${escapeHtml(item.href)}" target="_blank" rel="noreferrer">${escapeHtml(item.label)}</a>`)}
+            <span>${escapeHtml(profile.location)}</span>
           </div>
         </div>
         <form class="contact-form glass-card reveal" id="contactForm" novalidate>

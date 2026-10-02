@@ -1,3 +1,4 @@
+import { profile } from "../data/profile.js";
 import { projects } from "../data/projects.js";
 import { sectionHeader, tag } from "./ui.js";
 import { escapeHtml, html, list } from "../lib/dom.js";
@@ -10,7 +11,7 @@ export function ProjectsSection() {
         ${list(projects, projectCard)}
       </div>
     </section>
-    <aside class="project-drawer" id="projectDrawer" aria-hidden="true" aria-label="Project case study">
+    <aside class="project-drawer" id="projectDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
       <button class="drawer-close" type="button" id="drawerClose" aria-label="Close project details">Close</button>
       <div id="drawerContent"></div>
     </aside>
@@ -44,10 +45,10 @@ export function drawerTemplate(project) {
   return html`
     <div class="drawer-content">
       <p class="section-kicker">Case study / ${escapeHtml(project.year)}</p>
-      <h2>${escapeHtml(project.title)}</h2>
+      <h2 id="drawerTitle">${escapeHtml(project.title)}</h2>
       <p class="drawer-lead">${escapeHtml(project.description)}</p>
       <div class="drawer-actions drawer-actions--top">
-        ${project.github ? `<a class="btn btn--primary" href="${escapeHtml(project.github)}" target="_blank" rel="noreferrer">GitHub</a>` : ""}
+        ${project.github ? `<a class="btn btn--primary" href="${escapeHtml(project.github)}" target="_blank" rel="noreferrer">${githubLabel(project.github)}</a>` : ""}
         ${project.demo ? `<a class="btn btn--ghost" href="${escapeHtml(project.demo)}" target="_blank" rel="noreferrer">Demo / Docs</a>` : ""}
       </div>
       <div class="drawer-meta">
@@ -72,4 +73,8 @@ export function drawerTemplate(project) {
       <div class="tag-cloud">${list(project.techStack, tag)}</div>
     </div>
   `;
+}
+
+function githubLabel(url) {
+  return url.replace(/\/+$/, "") === profile.github ? "GitHub profile" : "View code";
 }

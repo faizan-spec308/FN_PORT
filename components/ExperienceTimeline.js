@@ -1,6 +1,6 @@
 import { experiences } from "../data/experience.js";
 import { sectionHeader, tag } from "./ui.js";
-import { html, list } from "../lib/dom.js";
+import { escapeHtml, html, list } from "../lib/dom.js";
 
 export function ExperienceTimeline() {
   return html`
@@ -12,13 +12,13 @@ export function ExperienceTimeline() {
             <div class="timeline-node">${String(index + 1).padStart(2, "0")}</div>
             <div class="glass-card timeline-card">
               <div class="timeline-card__top">
-                <span>${item.dates}</span>
+                <span>${escapeHtml(item.dates)}</span>
               </div>
-              <h3>${item.role}</h3>
-              <p class="timeline-org">${item.organisation} - ${item.location}</p>
-              <p>${item.summary}</p>
-              <ul>${list(item.bullets, bullet => `<li>${bullet}</li>`)}</ul>
-              <div class="tag-cloud">${list(item.skills, tag)}</div>
+              <h3>${escapeHtml(item.role)}</h3>
+              <p class="timeline-org">${escapeHtml(item.organisation)} · ${escapeHtml(item.location)}</p>
+              <p>${escapeHtml(item.summary)}</p>
+              <ul>${list(item.bullets, bullet => `<li>${escapeHtml(bullet)}</li>`)}</ul>
+              <div class="tag-cloud">${list(item.skills, skill => tag(skill))}</div>
             </div>
           </article>
         `)}
