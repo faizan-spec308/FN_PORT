@@ -9,7 +9,7 @@ export const projects = [
     year: "2026",
     status: "Hackathon — Presented to Microsoft",
     github: "https://github.com/faizan-spec308/HillingOne",
-    demo: "",
+    demo: "https://hilling-one.vercel.app",
     image: "",
     problem: "Hillingdon residents had to navigate 17 separate council systems to book facilities — a broken, fragmented experience that wasted time and resources.",
     solution: "Built a unified AI platform with 4 specialised agents that handle search, booking, demand forecasting, and inventory optimisation — all through a single conversational interface.",

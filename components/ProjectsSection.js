@@ -49,7 +49,7 @@ export function drawerTemplate(project) {
       <p class="drawer-lead">${escapeHtml(project.description)}</p>
       <div class="drawer-actions drawer-actions--top">
         ${project.github ? `<a class="btn btn--primary" href="${escapeHtml(project.github)}" target="_blank" rel="noreferrer">${githubLabel(project.github)}</a>` : ""}
-        ${project.demo ? `<a class="btn btn--ghost" href="${escapeHtml(project.demo)}" target="_blank" rel="noreferrer">Demo / Docs</a>` : ""}
+        ${project.demo ? `<a class="btn btn--ghost" href="${escapeHtml(project.demo)}" target="_blank" rel="noreferrer">Live demo ↗</a>` : ""}
       </div>
       <div class="drawer-meta">
         <span>${escapeHtml(project.status)}</span>
